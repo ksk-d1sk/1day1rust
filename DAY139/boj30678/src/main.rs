@@ -1,4 +1,4 @@
-// use std::io;
+use std::io;
 use std::iter::repeat;
 
 const STAR: [[bool; 5]; 5] = [
@@ -10,9 +10,7 @@ const STAR: [[bool; 5]; 5] = [
 ];
 
 fn main() {
-    let buf = 
-        include_str!("input.txt");
-        // io::read_to_string(io::stdin()).unwrap();
+    let buf = io::read_to_string(io::stdin()).unwrap();
     let mut input = buf.split_ascii_whitespace();
 
     macro_rules! get {
