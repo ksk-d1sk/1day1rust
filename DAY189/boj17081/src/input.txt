@@ -1,0 +1,16 @@
+5 6
+BB&^M.
+&####.
+^&.B..
+...#&#
+.@..&.
+RRRUULLLLUUURRRRRDDDLL
+5 5 One 4 1 5 3
+4 5 Two 4 1 6 3
+3 2 Three 13 1 5 6
+2 1 Four 11 2 7 4
+1 3 Five 13 2 10 3
+1 5 Boss 14 3 13 10
+3 4 A 4
+1 1 O RE
+1 2 O CU
