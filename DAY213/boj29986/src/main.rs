@@ -1,0 +1,23 @@
+use std::io::*;
+
+fn main() {
+    let input = read_to_string(stdin()).unwrap();
+    let mut tokens = input.split_ascii_whitespace();
+
+    macro_rules! next {
+        () => { tokens.next().unwrap() };
+        ( $($t:ty),+ ) => { ($(tokens.next().unwrap().parse::<$t>().unwrap()),+) };
+    }
+
+    let n = next!(u8);
+    let height = next!(u8);
+    let mut count = 0;
+
+    for a in (0..n).map(|_| next!(u8)) {
+        if height >= a {
+            count += 1;
+        }
+    }
+
+    print!("{count}");
+}
